@@ -295,3 +295,92 @@ br{
     margin-left: 12px;
 }
 }
+
+@media (max-width: 320px){
+  h1{
+    font-size: 38px;
+    padding: 110px 0px 4px 0px;
+}
+h2{
+    font-size: 18px;
+    padding: 0px 4px 6px 4px;
+}
+h3{
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 0px;
+    margin-left: 20px;
+}
+h4{
+    display: none;
+}
+p{
+    font-size: 16px;
+}
+br{
+    display:none;
+}
+.industry-button-active{
+    font-size: 16px;
+    line-height: 16px;
+    border-radius: 0px 0px 6px 6px;
+    padding: 2px;
+    width: 154px;
+    height: 55px;
+    top: 50px;
+    left: 12px;
+}
+.industry-button-inactive{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    border-radius: 0px 0px 6px 6px;
+    padding: 2px;
+    width: 154px;
+    height: 55px;
+    top: 50px;
+    left: 180px;
+}
+.button-active{
+    font-size: 16px;
+    line-height: 16px;
+    padding: 10px 14px 10px 14px;
+    width: 100px;
+    height: 36px;
+    margin-top: 14px;
+    margin-left: 0px;
+}
+.button-active-b{
+    font-size: 16px;
+    line-height: 16px;
+    padding: 10px 14px 10px 14px;
+    width: 100px;
+    height: 36px;
+    margin-top: 14px;
+    margin-left: 0px;
+}
+.coding-knowledge{
+    font-size: 14px;
+    padding:0px 0px 22px 0px;
+    margin: 0;
+}
+.coding-language{
+    padding: 2px 4px 0px 6px;
+}
+.github-link{
+    font-size: 14px;
+    margin-top: 0px;
+    margin-left: -10px;
+    padding-bottom: 34px;
+}  
+.project-image{
+    display: none;
+}
+.project-image-b{
+    display:none;
+}
+.project-overview{
+    margin-left: 20px;
+    padding-right: 4px;
+}
+}
