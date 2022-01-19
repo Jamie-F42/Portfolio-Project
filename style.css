@@ -34,6 +34,13 @@ p{
     font-size: 20px;
     font-weight: 400;
 }
+.industry-button-toggle{
+    display:flex;
+    flex-direction: column;
+    position:fixed;
+    top: 90px;
+    left: 0px;
+}
 .industry-button-active{
     color: var(--background-color);
     font-size: 20px;
@@ -45,9 +52,6 @@ p{
     padding: 4px;
     width: 200px;
     height: 70px;
-    position:fixed;
-    top: 90px;
-    left: 0px;
 }
 .industry-button-inactive{
     color: var(--secondary-color);
@@ -60,9 +64,8 @@ p{
     padding: 4px;
     width: 203px;
     height: 70px;
-    position:fixed;
-    top: 180px;
-    left: -3px;
+    margin: 14px 0px 0px -3px;
+    
 }
 .button-active{
     color: var(--background-color);
@@ -111,7 +114,216 @@ p{
     display: block;
 }
 
-@media (max-width: 425px){
+@media (max-width:1024px){
+    h1{
+    font-size: 52px;
+    text-align: center;
+    font-weight: 700;
+    padding: 14px 0px 8px 0px;
+}
+h2{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 4px;
+}
+h3{
+    font-size: 26px;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+h4{
+    text-align: center;
+    font-size: 22px;
+}
+p{
+    font-size: 20px;
+    font-weight: 400;
+}
+.industry-button-toggle{
+    display:flex;
+    flex-direction: column;
+    position:fixed;
+    top: 80px;
+    left: 0px;
+}
+.industry-button-active{
+    color: var(--background-color);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 0px 6px 6px 0px;
+    padding: 4px;
+    width: 180px;
+    height: 70px;
+}
+.industry-button-inactive{
+    color: var(--secondary-color);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    background-color: var(--background-color);
+    border: solid 3px;
+    border-radius: 0px 6px 6px 0px;
+    padding: 4px;
+    width: 183px;
+    height: 70px;
+    margin: 14px 0px 0px -3px;
+    
+}
+.button-active{
+    color: var(--background-color);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 6px;
+    padding: 12px 16px 12px 16px;
+    width: 140px;
+    height: 50px;
+    margin-top: 80px;
+}
+.button-active-b{
+    color: var(--background-color);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 6px;
+    padding: 12px 16px 12px 16px;
+    width: 140px;
+    height: 50px;
+    margin-top: 80px;
+}
+.coding-knowledge{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-size: 20px;
+    padding-top: 15px;
+}
+.coding-language{
+    border: solid 2px;
+    padding: 4px 8px 2px 8px;
+    border-radius: 3px;
+    border-color: var(--secondary-color);
+}
+.github-link{
+    color: var(--primary-color);
+    font-size: 18px;
+    margin-top: 100px;
+    display: block;
+}
+}
+@media (max-width: 868px){
+  h1{
+    font-size: 42px;
+    padding: 130px 0px 8px 0px;
+}
+h2{
+    font-size: 24px;
+    padding: 2px 4px 20px 4px;
+}
+h3{
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 0px;
+    margin-left: 0px;
+}
+h4{
+    display: none;
+}
+p{
+    font-size: 18px;
+}
+br{
+    display:none;
+}
+.industry-button-toggle{
+    display:flex;
+    flex-direction: row;
+    position:fixed;
+    top: 50px;
+    left: 112px; 
+}
+.industry-button-active{
+    font-size: 18px;
+    line-height: 16px;
+    border-radius: 0px 0px 6px 6px;
+    padding: 2px;
+    width: 240px;
+    height: 65px;
+    top: 50px;
+    left: 84px;
+}
+.industry-button-inactive{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    border-radius: 0px 0px 6px 6px;
+    padding: 2px;
+    width: 240px;
+    height: 65px;
+    top: 50px;
+    left: 438px;
+    margin: 0px 0px 0px 50px;
+}
+.button-active{
+    font-size: 16px;
+    line-height: 16px;
+    padding: 10px 14px 10px 14px;
+    width: 100px;
+    height: 36px;
+    margin-top: 14px;
+    margin-left: -20px;
+}
+.button-active-b{
+    font-size: 16px;
+    line-height: 16px;
+    padding: 10px 14px 10px 14px;
+    width: 100px;
+    height: 36px;
+    margin-top: 14px;
+    margin-left: 0px;
+}
+.coding-knowledge{
+    font-size: 18px;
+    padding:0px 0px 32px 0px;
+    margin: 0;
+}
+.coding-language{
+    padding: 2px 6px 0px 6px;
+}
+.github-link{
+    font-size: 16px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-bottom: 54px;
+}  
+.project-image{
+    width: 220px;
+}
+.project-image-b{
+    width: 220px;
+    margin-left: -10px;
+}
+.project-overview{
+    margin-left: 0px;
+    padding-right: 4px;
+}
+.project-title-b{
+    margin-left: 12px;
+}
+.project-overview-b{
+    margin-left: 12px;
+}
+}
+@media (max-width: 625px){
   h1{
     font-size: 40px;
     padding: 120px 0px 8px 0px;
@@ -135,15 +347,20 @@ p{
 br{
     display:none;
 }
+.industry-button-toggle{
+    display:flex;
+    flex-direction: row;
+    position:fixed;
+    top: 50px;
+    left: 32px; 
+}
 .industry-button-active{
     font-size: 16px;
     line-height: 16px;
     border-radius: 0px 0px 6px 6px;
     padding: 2px;
-    width: 194px;
+    width: 170px;
     height: 55px;
-    top: 50px;
-    left: 14px;
 }
 .industry-button-inactive{
     font-size: 16px;
@@ -151,10 +368,10 @@ br{
     line-height: 16px;
     border-radius: 0px 0px 6px 6px;
     padding: 2px;
-    width: 194px;
+    width: 170px;
     height: 55px;
-    top: 50px;
-    left: 218px;
+    left: 260px;
+    margin: 0px 0px 0px 20px;
 }
 .button-active{
     font-size: 16px;
@@ -200,39 +417,46 @@ br{
     padding-right: 4px;
 }
 }
-@media (max-width: 768px){
+@media (max-width: 375px){
   h1{
-    font-size: 42px;
-    padding: 130px 0px 8px 0px;
+    font-size: 38px;
+    padding: 110px 0px 4px 0px;
 }
 h2{
-    font-size: 24px;
-    padding: 2px 4px 10px 4px;
+    font-size: 20px;
+    padding: 0px 6px 6px 6px;
 }
 h3{
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
     padding-bottom: 0px;
-    margin-left: 0px;
+    margin-left: 20px;
 }
 h4{
     display: none;
 }
 p{
-    font-size: 18px;
+    font-size: 16px;
 }
 br{
     display:none;
 }
+.industry-button-toggle{
+    display:flex;
+    flex-direction: row;
+    position:fixed;
+    top: 50px;
+    left: 26px; 
+}
 .industry-button-active{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 16px;
     border-radius: 0px 0px 6px 6px;
     padding: 2px;
-    width: 240px;
-    height: 65px;
+    width: 150px;
+    height: 55px;
     top: 50px;
-    left: 84px;
+    left: 12px;
 }
 .industry-button-inactive{
     font-size: 16px;
@@ -240,10 +464,10 @@ br{
     line-height: 16px;
     border-radius: 0px 0px 6px 6px;
     padding: 2px;
-    width: 240px;
-    height: 65px;
+    width: 150px;
+    height: 55px;
     top: 50px;
-    left: 438px;
+    
 }
 .button-active{
     font-size: 16px;
@@ -251,8 +475,8 @@ br{
     padding: 10px 14px 10px 14px;
     width: 100px;
     height: 36px;
-    margin-top: 14px;
-    margin-left: -20px;
+    margin-top: 0px;
+    margin-left: 0px;
 }
 .button-active-b{
     font-size: 16px;
@@ -264,41 +488,37 @@ br{
     margin-left: 0px;
 }
 .coding-knowledge{
-    font-size: 18px;
-    padding:0px 0px 32px 0px;
+    font-size: 14px;
+    padding:0px 0px 22px 0px;
     margin: 0;
 }
 .coding-language{
-    padding: 2px 6px 0px 6px;
+    padding: 2px 4px 0px 4px;
 }
 .github-link{
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 0px;
-    margin-left: 0px;
+    margin-left: -10px;
     padding-bottom: 34px;
 }  
 .project-image{
-    width: 220px;
+    display: none;
 }
 .project-image-b{
-    width: 220px;
-    margin-left: -10px;
+    display:none;
+}
+.spacing{
+    display:none;
 }
 .project-overview{
-    margin-left: 0px;
+    margin-left: 20px;
     padding-right: 4px;
-}
-.project-title-b{
-    margin-left: 12px;
-}
-.project-overview-b{
-    margin-left: 12px;
 }
 }
 
 @media (max-width: 320px){
   h1{
-    font-size: 38px;
+    font-size: 36px;
     padding: 110px 0px 4px 0px;
 }
 h2{
@@ -320,12 +540,19 @@ p{
 br{
     display:none;
 }
+.industry-button-toggle{
+    display:flex;
+    flex-direction: row;
+    position:fixed;
+    top: 50px;
+    left: 16px; 
+}
 .industry-button-active{
     font-size: 16px;
     line-height: 16px;
     border-radius: 0px 0px 6px 6px;
     padding: 2px;
-    width: 154px;
+    width: 134px;
     height: 55px;
     top: 50px;
     left: 12px;
@@ -336,10 +563,10 @@ br{
     line-height: 16px;
     border-radius: 0px 0px 6px 6px;
     padding: 2px;
-    width: 154px;
+    width: 134px;
     height: 55px;
     top: 50px;
-    left: 180px;
+    
 }
 .button-active{
     font-size: 16px;
@@ -377,6 +604,9 @@ br{
     display: none;
 }
 .project-image-b{
+    display:none;
+}
+.spacing{
     display:none;
 }
 .project-overview{
