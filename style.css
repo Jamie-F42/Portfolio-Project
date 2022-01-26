@@ -1,8 +1,9 @@
 :root{
-    --background-color:#181a18;
+    --background-color:#161816;
     --type-color: #ebebeb;
-    --primary-color: #349E6B;
-    --secondary-color: #9AEBB4;
+    --primary-color: 
+#36a16e;
+    --secondary-color: #85cba8;
 }
 body{
     font-family: 'Nunito Sans', sans-serif;
@@ -114,6 +115,19 @@ p{
     display: block;
 }
 
+.about-main{
+    width:100%;
+    margin:0 auto;
+}
+
+.about-grid{
+    margin-top:50px;
+}
+
+.about-subtitle{
+    font-size: 32px;
+    padding:30px 0px 16px 0px;
+}
 @media (max-width:1024px){
     h1{
     font-size: 52px;
