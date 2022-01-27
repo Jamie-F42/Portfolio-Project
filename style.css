@@ -5,6 +5,9 @@
 #36a16e;
     --secondary-color: #85cba8;
 }
+.container{
+    max-width:1500px;
+}
 body{
     font-family: 'Nunito Sans', sans-serif;
     background-color: var(--background-color);
@@ -118,6 +121,8 @@ p{
 .about-main{
     width:100%;
     margin:0 auto;
+    display:flex;
+    justify-content:space-between;
 }
 
 .about-grid{
@@ -126,8 +131,9 @@ p{
 
 .about-subtitle{
     font-size: 32px;
-    padding:30px 0px 16px 0px;
+    padding:30px 0px 26px 0px;
 }
+
 @media (max-width:1024px){
     h1{
     font-size: 52px;
