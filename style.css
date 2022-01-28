@@ -28,7 +28,6 @@ h2{
 h3{
     font-size: 28px;
     font-weight: 600;
-    padding-bottom: 8px;
 }
 h4{
     text-align: center;
@@ -82,20 +81,6 @@ p{
     padding: 12px 16px 12px 16px;
     width: 140px;
     height: 50px;
-    margin-top: 80px;
-}
-.button-active-b{
-    color: var(--background-color);
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 20px;
-    background-color: var(--secondary-color);
-    border: none;
-    border-radius: 6px;
-    padding: 12px 16px 12px 16px;
-    width: 140px;
-    height: 50px;
-    margin-top: 80px;
 }
 .coding-knowledge{
     display:flex;
@@ -114,8 +99,6 @@ p{
 .github-link{
     color: var(--primary-color);
     font-size: 18px;
-    margin-top: 100px;
-    display: block;
 }
 
 .about-main{
@@ -132,6 +115,94 @@ p{
 .about-subtitle{
     font-size: 32px;
     padding:30px 0px 26px 0px;
+}
+
+.grid-container-home{
+    display:grid;
+    height: 340px;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows: 20% 50% 30% ;
+    grid-gap: 10px;
+    grid-template-areas: "main header ."
+    "main content content"
+    "main sidebar footer";
+}
+.home-grid-item-title{
+    grid-area: header;
+}
+.home-grid-item-image{
+    grid-area: main;
+    justify-self: center;
+}
+.home-grid-item-text{
+    grid-area: content;
+}
+.home-grid-item-button{
+    grid-area: sidebar;
+    align-self: center;
+}
+.home-grid-item-link{
+    grid-area:footer;
+    align-self: center;
+}
+.grid-container-home-b{
+    display:grid;
+    height: 340px;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: 20% 50% 30% ;
+    grid-gap: 10px;
+    grid-template-areas: "header . main"
+    "content content main"
+    "sidebar footer main";
+}
+.home-grid-item-title-b{
+    grid-area: header;
+}
+.home-grid-item-image-b{
+    grid-area: main;
+    justify-self: center;
+}
+.home-grid-item-text-b{
+    grid-area: content;
+}
+.home-grid-item-button-b{
+    grid-area: sidebar;
+    align-self: center;
+}
+.home-grid-item-link-b{
+    grid-area:footer;
+    align-self: center;
+}
+
+.grid-container-work{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: minmax(50px, auto);
+    grid-gap: 20px;
+    grid-template-areas: "header header"
+    "sidebar ."
+    "main content"
+    "main content"
+    "main footer";
+}
+.work-grid-item-title{
+    grid-area: header;
+}
+.work-grid-item-icons{
+    grid-area: sidebar;
+}
+.work-grid-item-image{
+    grid-area: main;
+}
+.work-grid-item-text{
+    grid-area: content;
+}
+.work-grid-item-link{
+    grid-area:footer;
+}
+
+.language-icon{
+    padding:8px;
 }
 
 @media (max-width:1024px){
