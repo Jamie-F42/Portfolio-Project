@@ -1,8 +1,7 @@
 :root{
     --background-color:#161816;
     --type-color: #ebebeb;
-    --primary-color: 
-#36a16e;
+    --primary-color:#2d8530;
     --secondary-color: #85cba8;
 }
 .container{
@@ -13,6 +12,15 @@ body{
     background-color: var(--background-color);
     color: var(--type-color);
 }
+
+nav ul{
+    font-size: 20px;
+}
+nav li{
+    line-height: 40px;
+    padding: 0px 15px 0px 15px;
+}
+
 h1{
     font-size: 58px;
     text-align: center;
@@ -40,11 +48,18 @@ p{
 a{
     color: var(--primary-color);
 }
+.nav-name{
+    font-size: 24px;
+}
+.navbar-collapse{
+    text-align: right;
+    font-size: 20px;
+}
 .industry-button-toggle{
     display:flex;
     flex-direction: column;
     position:fixed;
-    top: 90px;
+    top: 100px;
     left: 0px;
 }
 .industry-button-active{
@@ -310,6 +325,15 @@ p{
     font-size: 18px;
     font-weight: 400;
 }
+
+nav ul{
+    font-size: 18px;
+}
+nav li{
+    line-height: 30px;
+    padding: 0px 10px 0px 10px;
+}
+
 .industry-button-toggle{
     display:flex;
     flex-direction: column;
@@ -459,6 +483,15 @@ p{
     font-size: 18px;
     font-weight: 400;
 }
+
+nav ul{
+    font-size: 18px;
+}
+nav li{
+    line-height: 30px;
+    padding: 0px 10px 0px 10px;
+}
+
 .industry-button-toggle{
     display:flex;
     flex-direction: column;
@@ -539,7 +572,7 @@ p{
 
 .grid-container-work{
     width:90%;
-    height: 350px;
+    height: 500px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 5% 15% 70% 10%;
     grid-gap: 20px;
@@ -551,6 +584,9 @@ p{
 .work-grid-item-link{
     grid-area:footer;
     align-items: start;
+}
+.work-image{
+    max-width:400px;
 }
 }
 
@@ -578,6 +614,14 @@ p{
 br{
     display:none;
 }
+nav ul{
+    font-size: 18px;
+}
+nav li{
+    line-height: 26px;
+    padding: 0px 10px 0px 10px;
+}
+
 .sub-bio{
     display: none;
 }
@@ -585,7 +629,7 @@ br{
     display:flex;
     flex-direction: row;
     position:fixed;
-    top: 50px;
+    top: 55px;
     left: 112px; 
 }
 .industry-button-active{
@@ -681,7 +725,7 @@ br{
 }
 
 .grid-container-work{
-    height: 360px;
+    height: 400px;
     padding-bottom: 70px;
     grid-template-rows: 5% 15% 70% 10%;
     grid-gap: 16px;
@@ -695,7 +739,7 @@ br{
     align-items: center;
 }
 .work-image{
-    width:500px;
+    max-width:300px;
 }
 .language-icon{
     padding:6px;
@@ -738,6 +782,16 @@ p{
 }
 br{
     display:none;
+}
+nav ul{
+    font-size: 18px;
+}
+nav li{
+    line-height: 22px;
+    padding: 0px 10px 0px 10px;
+}
+.nav-name{
+    font-size: 20px;
 }
 .sub-bio{
     display: none;
@@ -915,7 +969,7 @@ br{
 @media (max-width: 375px){
   h1{
     font-size: 36px;
-    padding: 110px 0px 4px 0px;
+    padding: 120px 0px 4px 0px;
 }
 h2{
     font-size: 20px;
@@ -933,6 +987,16 @@ p{
 }
 br{
     display:none;
+}
+nav ul{
+    font-size: 18px;
+}
+nav li{
+    line-height: 20px;
+    padding: 0px 6px 0px 0px;
+}
+.nav-name{
+    font-size: 20px;
 }
 .sub-bio{
     display: none;
@@ -1107,6 +1171,16 @@ p{
 }
 br{
     display:none;
+}
+nav ul{
+    font-size: 18px;
+}
+nav li{
+    line-height: 20px;
+    padding: 0px 6px 0px 0px;
+}
+.nav-name{
+    font-size: 18px;
 }
 .sub-bio{
     display: none;
