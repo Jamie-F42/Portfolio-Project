@@ -209,6 +209,17 @@ footer{
     display:none;
 }
 
+.site-github{
+    font-size:22px;
+    text-align:right;
+    padding:30px;
+}
+.onsite-icon{
+    color: var(--primary-color);
+    font-size: 32px;
+    padding-right: 10px;
+}
+
 .about-main{
     display:flex;
     flex-direction:row;
@@ -741,6 +752,17 @@ footer{
     grid-gap: 12px;
 }
 
+.site-github{
+    font-size:20px;
+    text-align:right;
+    padding:40px;
+}
+.onsite-icon{
+    color: var(--primary-color);
+    font-size: 28px;
+    padding-right: 8px;
+}
+
 .about-main{
     display:flex;
     flex-direction:column;
@@ -952,6 +974,17 @@ footer{
     grid-area:footer;
     justify-self: center;
     align-self:auto;
+}
+
+.site-github{
+    font-size:20px;
+    text-align:right;
+    padding:50px 30px 30px 30px;
+}
+.onsite-icon{
+    color: var(--primary-color);
+    font-size: 24px;
+    padding-right: 8px;
 }
 
 .about-main{
@@ -1341,6 +1374,17 @@ footer{
     grid-template-areas: "header . "
     "content content"
     "sidebar footer";
+}
+
+.site-github{
+    font-size:18px;
+    text-align:right;
+    padding:50px 30px 30px 30px;
+}
+.onsite-icon{
+    color: var(--primary-color);
+    font-size: 22px;
+    padding-right: 8px;
 }
 
 .about-main{
