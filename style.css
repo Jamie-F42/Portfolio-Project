@@ -16,7 +16,7 @@
     max-width:1500px;
 }
 body{
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Rajdhani', sans-serif;
     background-color: var(--background-color);
     color: var(--type-color);
 }
@@ -26,12 +26,12 @@ h1{
     text-align: center;
     font-weight: 600;
     padding: 20px 0px 8px 0px;
+    margin-bottom: 10px;
 }
 h2{
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 500;
     text-align: center;
-    padding-top: 4px;
 }
 h3{
     font-size: 28px;
@@ -44,6 +44,26 @@ h4{
 p{
     font-size: 20px;
     font-weight: 400;
+}
+
+.masthead-intro{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.hud-collapse-toggle{
+    position: fixed;
+    bottom: 185px;
+    left: 65px;
+    font-size: 60px;
+    color: var(--secondary-color);
+    background-color: var(--background-color);
+    border: var(--primary-border);
+    border-radius: 10px;
+    box-shadow: var(--primary-glow);
+    width: 80px;
+    height: 70px;
 }
 
 .hud-home{
@@ -81,11 +101,19 @@ p{
     border-radius: var(--border-radius);
     width: 200px;
     height: 64px;
-    font-size: 24px;
-    font-family: 'Source Code Pro', monospace;
+    font-size: 26px;
     font-weight: 600px;
     background-color: rgba(255, 255, 255, 0.096);
     color: var(--type-color);
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.hud-button:hover{
+    box-shadow: var(--accent-glow);
+    animation: ease-in-out;
 }
 
 .difficulty-level-indicator{
@@ -137,14 +165,17 @@ p{
     color: var(--secondary-color);
     font-size: 50px;
     background: none;
+    transition: 0.3s;
 }
 
 .social-link:hover {
     filter: drop-shadow(0px 0px 10px #F900FE);
+    animation: ease-in-out;
 }
 
 .social-link-github:hover {
     filter: drop-shadow(0px 0px 10px #F900FE);
+    animation: ease-in-out;
 }
 
 .social-link-github{
@@ -152,9 +183,11 @@ p{
     color: var(--secondary-color);
     font-size: 90px;
     background: none;
+    transition: 0.3s;
 }
 
 footer{
+    font-family: 'Rajdhani', sans-serif;
     height:220px;
     position:fixed;
     bottom: -14px;
@@ -180,8 +213,8 @@ footer{
 .industry-button-active{
     color: var(--background-color);
     box-shadow: var(--primary-glow);
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 22px;
+    font-weight: 600;
     line-height: 20px;
     background-color: var(--primary-color);
     border: var(--primary-border);
@@ -189,11 +222,13 @@ footer{
     padding: 4px;
     width: 200px;
     height: 70px;
+    font-family: 'Rajdhani', sans-serif;
+    
 }
 .industry-button-inactive{
     color: var(--primary-color);
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 22px;
+    font-weight: 600;
     line-height: 20px;
     background-color: var(--background-color);
     border: solid 3px;
@@ -202,7 +237,13 @@ footer{
     width: 203px;
     height: 70px;
     margin: 16px 0px 0px -3px;
-    
+    font-family: 'Rajdhani', sans-serif;
+    transition: 0.3s;
+}
+
+.industry-button-inactive:hover{
+    box-shadow: var(--primary-glow);
+    animation: ease-in-out;
 }
 
 .button-active{
@@ -230,19 +271,23 @@ footer{
 .skill-list{
     margin-left: 20%;
     grid-area: content;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    display:grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "content content"
+    "header main";
 }
 
 .coding-knowledge{
+    grid-area: content;
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
     list-style-type: none;
-    font-size: 20px;
+    font-size: 26px;
     padding-top: 15px;
-    height:240px;
+    height:300px;
+    margin: 0;
 }
 
 .coding-language{
@@ -253,14 +298,31 @@ footer{
     max-width: fit-content;
 }
 
+.soft-skills-title{
+    grid-area: header;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 32%;
+    padding-right: 10px;
+    letter-spacing: 2px;
+}
+
 .coding-softskills{
+    grid-area: main;
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
     list-style-type: none;
-    font-size: 20px;
-    padding-top: 15px;
-    height:240px;
+    font-size: 22px;
+    padding-top: 30px;
+    height:250px;
+    margin: 0;
+    padding-inline-start: 0px;
+    
 }
 
 .soft-skill{
@@ -273,7 +335,7 @@ footer{
 
 .welcome-message{
     grid-area: main;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 400px;
 }
 
@@ -282,10 +344,10 @@ footer{
     border: var(--secondary-border);
     border-radius: 10px;
     box-shadow: var(--secondary-glow);
-    padding: 24px;
-    max-height: 320px;
+    padding: 26px;
+    max-height: 360px;
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 22px;
 }
 .github-link{
     color: var(--primary-color);
