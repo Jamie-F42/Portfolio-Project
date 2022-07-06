@@ -1,0 +1,64 @@
+.hud-home-button{
+    color: var(--primary-color);
+    font-size: 80px;
+    margin-left: 36px;
+    transition: 0.3s;
+}
+
+.hud-home-button:hover{
+    filter: drop-shadow(0px 0px 14px #278BFF);
+    animation: ease-in-out;
+}
+
+.coding-language{
+    display: flex;
+    flex-direction: row;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+.coding-language-disabled{
+    border: solid 2px;
+    padding: 4px 8px 2px 8px;
+    border-radius: 3px;
+    border-color: rgb(139, 132, 132);
+    max-width: fit-content;
+    color: rgb(139, 132, 132);
+}
+
+.aspect-bar{
+    display: flex;
+    flex-direction: row;
+    padding-left: 12px;
+}
+.rect-point-filled{
+    height: 26px;
+    width: 18px;
+    background-color: var(--secondary-color);
+    border-radius: 3px;
+    margin: 4px;
+}
+.rect-point-empty{
+    height: 26px;
+    width: 18px;
+    background-color: transparent;
+    box-shadow: 0px 0px 5px 1px #FC74FF;
+    border-radius: 3px;
+    margin: 4px;
+}
+
+.soft-skill-disabled{
+    border: solid 2px;
+    padding: 4px 8px 2px 8px;
+    border-radius: 3px;
+    border-color: rgb(139, 132, 132);
+    max-width: fit-content;
+    color: rgb(139, 132, 132);
+}
+
+.hud-button-active{
+    background-color: var(--accent-color);
+  box-shadow: var(--accent-glow);  
+  color: var(--background-color);
+  font-weight: 600;
+}
