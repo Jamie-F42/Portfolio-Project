@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/7b579e44f8.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">    
 <title>Jamie: Porfolio</title>
@@ -15,7 +16,7 @@
     <button class="industry-button-inactive">UX Design</button>
   </div>
     <h1>Jamie Foster</h1>
-    <div class="masthead-intro">Front-End Developer based in Toronto, Canada</div>
+    <div class="masthead-intro">Front-End Developer</div>
     <br />
     <br />
     <br />
@@ -48,10 +49,10 @@
          <br />
         <br />
         <br />
-        <button class="hud-collapse-toggle">
-            <i class="fa-solid fa-caret-down"></i>
+        <button class="hud-collapse-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHud" aria-expanded="true" aria-controls="collapseHud">
+            <i class="fa-solid fa-sort"></i>
           </button>
-        <footer class="hud-collapse">
+        <footer class="hud-collapse collapse show" id="collapseHud">
           <div class="hud-home">
           <i class="fa-solid fa-house hud-home-button-active"></i>
         </div>
@@ -101,5 +102,6 @@
         </div>
         </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -54,16 +54,20 @@ p{
 
 .hud-collapse-toggle{
     position: fixed;
-    bottom: 185px;
-    left: 65px;
-    font-size: 60px;
+    z-index: 1;
+    bottom: 120px;
+    left: 15px;
+    font-size: 66px;
     color: var(--secondary-color);
-    background-color: var(--background-color);
-    border: var(--primary-border);
-    border-radius: 10px;
-    box-shadow: var(--primary-glow);
+    background: transparent;
+    border: none;
     width: 80px;
     height: 70px;
+}
+
+.hud-collapse-toggle:hover{
+    filter: drop-shadow(0px 0px 10px #F900FE);
+    animation: ease-in-out;
 }
 
 .hud-home{
