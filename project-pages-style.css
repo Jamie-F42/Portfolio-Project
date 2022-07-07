@@ -69,9 +69,30 @@
     font-weight: 500;
 }
 
+iframe{
+    border-radius: 10px;
+}
+
 .hud-button-active{
     background-color: var(--accent-color);
   box-shadow: var(--accent-glow);  
   color: var(--background-color);
   font-weight: 600;
+}
+
+.react-project-button{
+    font-size: 22px;
+    font-weight: 600;
+   border-radius: 6px;
+    padding: 8px 16px 8px 16px;
+    margin-bottom: 8px;
+    transition: 0.3s; 
+    background-color: var(--primary-color);
+    float: right;
+    border: none;
+}
+
+.react-project-button:hover{
+    box-shadow: var(--primary-glow);
+    animation: ease-in-out;
 }
