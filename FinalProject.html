@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Reading</title>
+    <style>
+        body {
+            background: #0e0707;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 40px;
+            margin: auto;
+            padding: 50px;
+        }
+        h3 {
+            font-size: 30px;
+            font-weight: 500;
+            color:rgb(238, 137, 224);
+            margin: 10px;
+        }
+        .intro {
+          text-align: center;
+            color: white;
+            font-size: 18px;
+            line-height: 1.5;
+            display: block;
+            width: 50%;
+            margin: auto; 
+        }
+        .wikiLink {
+            display: block;
+            text-align: center;
+            color: rgb(136, 247, 237);
+            font-size: 16px;
+            text-decoration: underline;
+            margin: 15px 10px 20px 700px;
+        }
+        img{
+            width: 300px;
+            display: block;
+            margin: auto;
+        }
+        button{
+            color: #2d2433;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 20px;
+            background-color: #fadc34;
+border-radius: 30px;
+border: 0;
+text-align: center;
+margin: 0 auto;
+display:block;
+box-shadow: 2px 2px 3px rgba(255, 255, 255, .3),
+             2px 2px 3px rgba(0, 0, 0, .6);
+             transition: all 150ms ease-in-out;
+             cursor: pointer;
+        }
+        button:hover{
+            background-color: #8b6113;
+color: #f6f2fe;
+font-size: 16px;
+            font-weight: 600;
+            }
+        .footer{
+            text-align: center;
+            color:white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔮 Tarot Reading 🌙</h1>
+    <p class = intro><strong>Tarot</strong> is an ancient divination that began in 14th century Europe. Traditional Tarot decks consist of 78 cards (the Major and Minor Arcana) depicting symbolic archetypes that allow us to tap into our intuition and gain clarity through Tarot card readings. Today, Tarot readings remain one of the most popular tools for insight and reflection worldwide.</p>
+<a class= "wikiLink" href= "https://en.wikipedia.org/wiki/Tarot" target= "blank">
+    Learn more about Tarot here
+</a>
+<img
+src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/010/051/original/tarotback.png?1622684206"
+alt="Tarot Card" id="cardTurnOver"
+/>
+<br/>
+    <button>
+    Unlock your reading
+</button>
+<script>
+    function tarotRead(){
+        let birthday = prompt("What is your birthday date? (Just the day number)");
+        let moon = prompt("Is it a full moon today?");
+
+        let r1 = document.querySelector ("p");
+        let card = document.querySelector ("img");
+
+        if (birthday <= 10 && moon === "yes") {
+            r1.innerHTML = "<h3> The Fool </h3>You are burdened by that which you know. Let go of preconcieved ideas and be open to change. Remember to recognize your path of personal development, see yourself on stage where you've made it, be proud of yourself for getting there, and energize yourself to keep moving forward.";
+            cardTurnOver.setAttribute("src", "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/010/053/original/fool.png?1622684318");
+        } if (birthday <= 10 && moon === "no"){
+            r1.innerHTML = "<h3> The Sun</h3>The Sun card advises you to have confidence in your natural divinity. Throw off any cultural conditioning that keeps you from being authentic with yourself. Step into the full light of truth and reveal your motives and principles. Once done, you will no longer give away power to the people that criticize and shame you. Focus on the positive and the real.";
+            cardTurnOver.setAttribute("src", "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/010/059/original/sun.png?1622687554");
+        } if (birthday >=11 && birthday <=20 && moon === "yes") {
+            r1.innerHTML = "<h3> Wheel of Fortune</h3>The Wheel of Fortune advises you follow the flow of events. Physical moves, spiritual awakenings, or dramatically changing social patterns could arise now. Accept these transformations.";
+            cardTurnOver.setAttribute("src", "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/010/055/original/fortune.png?1622687186");
+        } if (birthday >=11 && birthday <=20 && moon === "no") {
+            r1.innerHTML = "<h3> Judgment</h3>The Judgment card advises that you allow yourself to grow, transform, and release hidden potentials within yourself. Divest yourself of fruitless endeavors without neglecting your duties. At the same time, invest your energies in new growth.";
+            cardTurnOver.setAttribute("src", "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/010/056/original/judgment.png?1622687283");
+        } if (birthday >=21 && moon === "yes") {
+            r1.innerHTML = "<h3> The Magician</h3>Have faith in your innate creativity. The Magician advises you give your questioning nature and free-associating mind plenty of room to explore the subject at hand. Behave just as if you were an open-minded and curious scientist. Through this process, you may bring freshness and clarity into the situation that is both stimulating and catalytic.";
+            cardTurnOver.setAttribute("src", "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/010/058/original/magician.png?1622687499");
+        } if (birthday >=21 && moon === "no") {
+            r1.innerHTML = "<h3> Justice</h3>The Justice card advises you to listen carefully as others explain to you their version of events and the parts they played. It is unnecessary to offer feedback. Your role is to observe, listen closely, give a full hearing and keep your wits about you as the story takes shape.";
+            cardTurnOver.setAttribute("src", "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/010/057/original/justice.png?1622687406");
+        }
+    }
+    let reading= document.querySelector("button");
+reading.addEventListener("click", tarotRead);
+</script>
+<br />
+<br />
+<div class= footer>
+    Coded by Jamie Foster
+</div>
+<div class = footer>
+    Images sourced from Wikipedia
+</div>
+</body>
+</html>

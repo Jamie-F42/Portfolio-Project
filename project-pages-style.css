@@ -56,6 +56,19 @@
     color: rgb(139, 132, 132);
 }
 
+.home-container{
+    grid-template-columns: 25% 54% 21%;
+}
+
+.skill-list{
+    max-height: 600px;
+}
+
+.improve-statement{
+    text-decoration: underline;
+    font-weight: 500;
+}
+
 .hud-button-active{
     background-color: var(--accent-color);
   box-shadow: var(--accent-glow);  
