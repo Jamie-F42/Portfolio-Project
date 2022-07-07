@@ -242,8 +242,6 @@ footer{
     border: solid 3px;
 }
 
-
-
 .industry-button-inactive:hover{
     box-shadow: var(--primary-glow);
     animation: ease-in-out;
