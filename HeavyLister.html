@@ -7,8 +7,9 @@
     <script src="https://kit.fontawesome.com/7b579e44f8.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">    
-<title>Jamie: Porfolio</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="ux-project-pages-style.css">     
+<title>Jamie's Porfolio: Project Heavy Lister</title>
 </head>
 <body>
     <div class="industry-button-toggle">
@@ -16,30 +17,23 @@
     <a href="ux-index.html"><button class="industry-button-active industry-button">UX Design</button></a>
   </div>
     <h1>Jamie Foster</h1>
-    <div class="masthead-intro">User-Experience Designer</div>
+    <div class="masthead-intro">Heavy Lister</div>
     <br />
     <br />
     <br />
     <br />
-    <div class="home-container">
-      <div class="skill-list">
-    <ul class="coding-knowledge">
-      <li class="coding-language">HTML</li>
-      <li class="coding-language">CSS</li>
-      <li class="coding-language">JavaScript</li>
-      <li class="coding-language">React</li>
-      <li class="coding-language">API</li>
-    </ul>
-    <div class="soft-skills-title">Soft Skills</div>
-    <ul class="coding-softskills">
-      <li class="soft-skill">User Design</li>
-      <li class="soft-skill">Hosting</li>
-      <li class="soft-skill">Debugging</li>
-      <li class="soft-skill">Copy Writing</li>
-    </ul>
+    <div class="ux-project-container">
+      <div class="project-matrix">
+        <img src="src/HeLAssets/HeavyLmatrix.png" class="img-fluid matrix-image" alt="User Design Skills Measure Matrix">
   </div>
-    <div class="center-content">Welcome to me UX Design Portfolio! Please take some time to browse through my projects. They were all done as part of a team, myself doing varying parts of it.<br />Please reach out to me via my email below.<br /><br /> I look forward to hearing from you!</div>
-    <div class="appendix-box">I am always inspired by the UI of video games. They have the challenge of displaying as much information as needed without impeding on the action on-screen so as to best optimize the player's performance. The goal of this balance is something I carry with me through all my projects.<br /><br />If you would like so see my coding projects you can navigate through the tabs in the top-left corner.</div>
+  <div class="project-specs">
+<span style="text-decoration:underline">Date:</span> Winter 2020-21<br />
+<span style="text-decoration:underline">Project:</span> Design Solution to Food Inequity<br />
+<span style="text-decoration:underline">Team:</span> Jamie Foster, Leah Raftis, Gagan Dhaliwal, Nicole Visentin, Stuti Duggal</div>
+    <div class="center-content">
+        <div class="project-objectives"></div><div class="project-logo"></div><div class="project-deliverables"></div>
+    </div>
+    <div class="appendix-box">In a two phase agile sprint design method, we conducted research around food inequity and possible solutions. My team designed an app to save users time and money by comparing their shopping lists across different grocery stores for the best price, accounting for brands, coupons and even gas mileage.<br /><br />I focused mostly on the prototyping and wireframes, and became very familiar with Figma. This project's scope allowed me to really see multiple design iterations and I enjoyed watching each deliverable come out better than the last.</div>
   </div>
   
     <br />
@@ -53,18 +47,19 @@
         <button class="hud-collapse-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHud" aria-expanded="true" aria-controls="collapseHud">
             <i class="fa-solid fa-sort"></i>
           </button>
-        <footer class="hud-collapse collapse show" id="collapseHud">
+        <footer class="hud-collapse collapse" id="collapseHud">
           <div class="hud-home">
-          <i class="fa-solid fa-house hud-home-button-active"></i>
+            <a href="ux-index.html">
+          <i class="fa-solid fa-house hud-home-button"></i></a>
         </div>
       <div class="hud-navigation">
           <div class="hud-project">
             <a href="MedManager.html">
-          <button class="hud-button" >MedManager</button></a>
+          <button class="hud-button ">MedManager</button></a>
         </div>
         <div class="hud-project">
           <a href="HeavyLister.html">
-          <button class="hud-button">Heavy Lister</button></a>
+          <button class="hud-button hud-button-active">Heavy Lister</button></a>
           </div>
         <div class="hud-project">
           <a href="PODGardens.html">

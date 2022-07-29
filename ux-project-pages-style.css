@@ -1,0 +1,84 @@
+.hud-home-button{
+    color: var(--primary-color);
+    font-size: 80px;
+    margin-left: 36px;
+    transition: 0.3s;
+}
+
+.hud-button-active{
+    background-color: var(--accent-color);
+  box-shadow: var(--accent-glow);  
+  color: var(--background-color);
+  font-weight: 600;
+}
+
+.hud-home-button:hover{
+    filter: drop-shadow(0px 0px 14px #278BFF);
+    animation: ease-in-out;
+}
+
+.ux-project-container{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 30% 48% 22%;
+    grid-template-rows: 70% 30%;
+    grid-template-areas: "content main sidebar"
+    "footer main sidebar";
+    height:fit-content;
+}
+
+.project-matrix{
+    grid-area: content;
+    height: fit-content;
+}
+
+.matrix-image{
+    padding-right: 12px;
+}
+
+.project-specs{
+    font-size: 22px;
+    grid-area: footer;
+    padding:10px;
+    margin-top: 1.6em;
+    line-height: 1.8em;
+}
+.center-content{
+    grid-area: main;
+    display:grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 20% 80%;
+    height: fit-content;
+    grid-template-areas: "sidebar header"
+    "main main";
+}
+
+.project-objectives{
+    grid-area: sidebar;
+}
+
+.project-logo{
+    grid-area: header;
+}
+
+.project-deliverables{
+    grid-area: main;
+}
+
+.react-project-button{
+    font-size: 22px;
+    font-weight: 600;
+   border-radius: 6px;
+    padding: 8px 16px 8px 16px;
+    margin-bottom: 8px;
+    transition: 0.3s; 
+    background-color: var(--primary-color);
+    float: right;
+    border: none;
+}
+
+.react-project-button:hover{
+    box-shadow: var(--primary-glow);
+    animation: ease-in-out;
+}
