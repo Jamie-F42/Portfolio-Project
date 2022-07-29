@@ -96,3 +96,7 @@ iframe{
     box-shadow: var(--primary-glow);
     animation: ease-in-out;
 }
+
+.project-image{
+    border-radius: 10px;
+}
