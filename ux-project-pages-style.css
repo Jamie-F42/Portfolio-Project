@@ -21,11 +21,24 @@
     width: 90%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 30% 48% 22%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas: "content main sidebar"
-    "footer main sidebar";
+    grid-template-columns: 30% 50% 20%;
+    grid-template-rows: 100%;
+    grid-template-areas: "content main sidebar";
     min-height: 900px;
+}
+
+.right-sidebar{
+    grid-area:sidebar;
+}
+
+.appendix-box{
+    border: var(--secondary-border);
+    border-radius: 10px;
+    box-shadow: var(--secondary-glow);
+    padding: 26px;
+    max-height: fit-content;
+    margin: 0 auto;
+    font-size: 24px;
 }
 
 .project-matrix{
@@ -49,7 +62,7 @@
     grid-area: main;
     display:grid;
     grid-template-columns: 70% 30%;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 10% 90%;
     height: fit-content;
     grid-template-areas: "sidebar header"
     "main main";
@@ -67,6 +80,85 @@
 
 .project-deliverables{
     grid-area: main;
+    padding: 20px;
+    display:grid;
+    grid-template-columns: 45% 10% 45%;
+    grid-template-rows: 100%;
+    grid-template-areas: "main footer content";
+    justify-content: space-around;
+}
+
+.lowfi{
+    grid-area:main;
+    display:flex;
+    flex-direction: column;
+}
+
+.arrow{
+    grid-area:footer;
+    display:flex;
+    flex-direction: column;
+    font-size: 60px;
+    color: var(--primary-color);
+    justify-content: space-around;
+}
+
+.hifi{
+    grid-area:content;
+    display:flex;
+    flex-direction: column;
+}
+
+.wireframe{
+    max-width: 260px;
+    margin: 20px;
+}
+
+.project-deliverables-pod{
+    margin-top:10px;
+    grid-area: main;
+    padding: 20px;
+    display:grid;
+    grid-template-columns: 30% 5% 30% 5% 30%;
+    grid-template-rows: 100%;
+    grid-template-areas: "main footer header sidebar content";
+    justify-content: space-around;
+}
+
+.lowfi-pod{
+    grid-area:main;
+    display:flex;
+    flex-direction: column;
+}
+
+.arrow-pod{
+    grid-area:footer;
+    display:flex;
+    flex-direction: column;
+    font-size: 40px;
+    color: var(--primary-color);
+    justify-content: space-around;
+}
+
+.arrow-pod-2{
+    grid-area:sidebar;
+}
+
+.midfi-pod{
+    grid-area: header;
+    display:flex;
+    flex-direction: column;
+}
+
+.hifi-pod{
+    grid-area:content;
+    display:flex;
+    flex-direction: column;
+}
+
+.wireframe-pod{
+    max-width: 260px;
+    margin: 35px 20px 35px 20px;
 }
 
 .objectives-title{
@@ -77,6 +169,40 @@
 .objectives-list{
     list-style:none;
     font-size: 26px;
+}
+
+.center-content-lift{
+    grid-area: main;
+    display:grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 10% 80% 10%;
+    height: fit-content;
+    grid-template-areas: "sidebar header"
+    "main main"
+    "content content";
+}
+
+.project-objectives-lift{
+    grid-area: sidebar;
+}
+
+.project-logo-lift{
+    grid-area: header;
+    max-width: 170px;
+    padding-left: 20px;
+}
+
+.project-deliverables-lift{
+    grid-area: main;
+    width: 90%;
+}
+
+.lift-lofi-wireframe{
+    margin: 10px;
+}
+
+.lift-hifi-wireframe{
+    margin:10px;
 }
 
 .react-project-button{
