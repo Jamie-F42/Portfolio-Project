@@ -28,28 +28,15 @@ h1{
     padding: 30px 0px 8px 0px;
     margin-bottom: 10px;
 }
-h2{
-    font-size: 30px;
-    font-weight: 500;
-    text-align: center;
-}
-h3{
-    font-size: 28px;
-    font-weight: 500;
-}
-h4{
-    font-size: 22px;
-    font-weight: 500px 
-}
-p{
-    font-size: 20px;
-    font-weight: 400;
-}
 
 .masthead-intro{
     font-size: 30px;
     font-weight: 500;
     text-align: center;
+}
+
+.mobile-hud{
+    display:none;
 }
 
 .hud-collapse-toggle{
@@ -247,19 +234,6 @@ footer{
     animation: ease-in-out;
 }
 
-.button-active{
-    color: var(--background-color);
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 20px;
-    background-color: var(--secondary-color);
-    border: none;
-    border-radius: 6px;
-    padding: 12px 16px 12px 16px;
-    width: 140px;
-    height: 50px;
-}
-
 .home-container{
     width: 90%;
     margin: 0 auto;
@@ -355,4 +329,386 @@ footer{
 .github-link{
     color: var(--primary-color);
     font-size: 18px;
+}
+
+
+@media (max-width: 1024px){
+    
+    h1{
+    font-size: 50px;
+}
+
+.masthead-intro{
+    font-size: 28px;
+}
+
+.hud-collapse-toggle{
+    bottom: 118px;
+    left: 6px;
+    font-size: 56px;
+    width: 60px;
+    height: 40px;
+}
+
+.hud-home{
+    padding-top: 20px;
+}
+
+.hud-home-button-active{
+    font-size: 60px;
+    margin-left: 40px;
+}
+
+.hud-navigation{
+    margin-top: 4%;
+}
+
+.hud-button{
+    width: 175px;
+    height: 56px;
+    font-size: 22px;
+}
+
+.square-point-filled{
+    height: 16px;
+    width: 16px;
+    margin: 0px 6px 0px 4px;
+}
+
+.square-point-empty{
+    height: 16px;
+    width: 16px;
+    margin: 0px 6px 0px 4px;
+}
+
+.language-type-icon{
+    font-size: 22px;
+}
+
+.hud-contact-links{
+    column-gap: 18px;
+}
+
+.email-linkedin-icons{
+    row-gap: 8px;
+}
+
+.social-link{
+    font-size: 42px;
+}
+
+.social-link-github{
+    font-size: 82px;
+}
+
+footer{
+    height:200px;
+    background-image: url("src/HUDbar1024.png");
+}
+
+
+.industry-button-toggle{
+    top: 30px;
+}
+
+.industry-button{
+    font-size: 20px;
+    width: 190px;
+    height: 64px;
+}
+
+.home-container{
+    width: 95%;
+    grid-template-columns: 23% 52% 25%;
+}
+
+.skill-list{
+    margin-left: 16%;
+}
+
+.coding-knowledge{
+    font-size: 22px;
+    padding-top: 4px;
+    height:300px;
+}
+
+.soft-skills-title{
+    font-size: 28px;
+    text-align: center;
+    margin-left: 20%;
+    padding-right: 0px;
+}
+
+.coding-softskills{
+    font-size: 20px;
+    padding-top: 20px;
+    height:260px;
+}
+
+.center-content{
+    font-size: 24px;
+    padding: 20px;
+}
+
+.appendix-box{
+    padding: 18px;
+    font-size: 20px;
+}
+}
+
+@media (max-width: 768px){
+    
+    h1{
+    font-size: 42px;
+    margin-bottom: 0px;
+}
+
+.spacing{
+    display:none;
+}
+
+.masthead-intro{
+    font-size: 26px;
+}
+
+.hud-collapse-toggle{
+    bottom: 100px;
+    left: 2px;
+    font-size: 44px;
+    width: 50px;
+    height: 30px;
+}
+
+.hud-home{
+    padding-top: 8px;
+}
+
+.hud-home-button-active{
+    font-size: 50px;
+    margin-left: 30px;
+}
+
+.hud-navigation{
+    margin-top: 5%;
+}
+
+.hud-button{
+    width: 136px;
+    height: 48px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.difficulty-level-indicator{
+   display: none;
+}
+
+.language-type-icon{
+    display: none;
+}
+
+.hud-contact-links{
+    column-gap: 10px;
+}
+
+.email-linkedin-icons{
+    row-gap: 4px;
+}
+
+.social-link{
+    font-size: 30px;
+}
+
+.social-link-github{
+    font-size: 60px;
+}
+
+footer{
+    height:160px;
+    background-image: url("src/HUDbar768.png");
+}
+
+
+.industry-button-toggle{
+    top: 20px;
+}
+
+.industry-button{
+    font-size: 18px;
+    width: 170px;
+    height: 58px;
+}
+
+.home-container{
+    width: 95%;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 65% 35%;
+    grid-template-areas: "content main"
+    "content sidebar";
+}
+
+.skill-list{
+    margin-left: 10%;
+}
+
+.coding-knowledge{
+    font-size: 20px;
+    padding-top: 4px;
+    height:260px;
+}
+
+.soft-skills-title{
+    font-size: 24px;
+    text-align: center;
+    margin-left:10%;
+    padding-right: 0px;
+}
+
+.coding-softskills{
+    font-size: 18px;
+    padding-top: 10px;
+    height:230px;
+}
+
+.center-content{
+    font-size: 22px;
+    padding: 10px;
+}
+
+.appendix-box{
+    padding: 14px;
+    font-size: 20px;
+    max-height: fit-content;
+
+}
+}
+
+@media (max-width: 425px){
+    
+    h1{
+    font-size: 30px;
+    margin-top: 34px;
+}
+
+.spacing{
+    display:none;
+}
+
+.masthead-intro{
+    font-size: 22px;
+}
+
+.mobile-hud{
+    display:block;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.hud-collapse-toggle{
+    bottom: 80px;
+    left: 2px;
+    font-size: 36px;
+    width: 30px;
+    height: 20px;
+}
+
+.hud-home{
+    padding-top: 8px;
+}
+
+.hud-home-button-active{
+    font-size: 38px;
+    margin-left: 50px;
+}
+
+.hud-navigation{
+    display: none;
+}
+
+.hud-button{
+    width: 140px;
+    height: 46px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.hud-contact-links{
+    column-gap: 10px;
+}
+
+.email-linkedin-icons{
+    row-gap: 4px;
+}
+
+.social-link{
+    font-size: 20px;
+}
+
+.social-link-github{
+    font-size: 30px;
+}
+
+footer{
+    height:130px;
+    background-image: url("src/HUDbar425.png");
+}
+
+
+.industry-button-toggle{
+    flex-direction: row;
+    top: 0px;
+    left: 26px;
+}
+
+.industry-button{
+    font-size: 20px;
+    width: 170px;
+    height: 54px;
+    line-height: 16px;
+   border-radius: 0px 0px 6px 6px;
+    margin: -3px 8px 0px 8px;
+}
+
+.home-container{
+    width: 95%;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 65% 35%;
+    grid-template-areas: "content main"
+    "content sidebar";
+}
+
+.skill-list{
+    margin-left: 10%;
+}
+
+.coding-knowledge{
+    font-size: 20px;
+    padding-top: 4px;
+    height:260px;
+}
+
+.soft-skills-title{
+    font-size: 24px;
+    text-align: center;
+    margin-left:10%;
+    padding-right: 0px;
+}
+
+.coding-softskills{
+    font-size: 18px;
+    padding-top: 10px;
+    height:230px;
+}
+
+.center-content{
+    font-size: 22px;
+    padding: 10px;
+}
+
+.appendix-box{
+    padding: 14px;
+    font-size: 20px;
+    max-height: fit-content;
+
+}
 }
