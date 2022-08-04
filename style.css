@@ -201,6 +201,7 @@ footer{
     position:fixed;
     top: 50px;
     left: 0px;
+    z-index: 2;
 }
 
 .industry-button{
@@ -613,7 +614,7 @@ footer{
 }
 
 .hud-home{
-    padding-top: 8px;
+    padding-top: 10px;
 }
 
 .hud-home-button-active{
@@ -625,6 +626,17 @@ footer{
     display: none;
 }
 
+.mobile-hud-dropdown{
+    background-color: var(--background-color);
+    border: solid 2px;
+    border-color: var(--primary-color);
+}
+
+.dropdown-item{
+    color: var(--type-color);
+    font-size: 20px;
+}
+
 .hud-button{
     width: 140px;
     height: 46px;
@@ -632,8 +644,30 @@ footer{
     font-weight: 400;
 }
 
+.mobile-social{
+    display: block;
+}
+
+a:hover{
+    color: var(--secondary-color);
+}
+
+.mobile-social-expand{
+    font-size: 30px;
+    margin-left: 10px;
+    padding-top: 8px;
+    color: var(--secondary-color);
+}
+
+.mobile-social-dropdown{
+    background-color: transparent;
+    border: none;
+    text-align: right;
+    line-height: 3em;
+}
+
 .hud-contact-links{
-    column-gap: 10px;
+    display: none;
 }
 
 .email-linkedin-icons{
@@ -641,15 +675,15 @@ footer{
 }
 
 .social-link{
-    font-size: 20px;
+    font-size: 44px;
 }
 
 .social-link-github{
-    font-size: 30px;
+    font-size: 51px;
 }
 
 footer{
-    height:130px;
+    height:135px;
     background-image: url("src/HUDbar425.png");
 }
 
@@ -672,42 +706,114 @@ footer{
 .home-container{
     width: 95%;
     grid-template-columns: 25% 75%;
-    grid-template-rows: 65% 35%;
-    grid-template-areas: "content main"
-    "content sidebar";
+    grid-template-rows: 5% 55% 40%;
+    grid-template-areas: "content content"
+    "main main"
+    "sidebar sidebar";
+    height: 760px;
 }
 
 .skill-list{
-    margin-left: 10%;
+    margin-left: 0%;
 }
 
 .coding-knowledge{
-    font-size: 20px;
-    padding-top: 4px;
-    height:260px;
+    font-size: 18px;
+    padding: 0px;
+    height:fit-content;
+    flex-direction: row;
 }
 
 .soft-skills-title{
-    font-size: 24px;
-    text-align: center;
-    margin-left:10%;
-    padding-right: 0px;
+    display: none;
 }
 
 .coding-softskills{
-    font-size: 18px;
-    padding-top: 10px;
-    height:230px;
+    display: none;
 }
 
 .center-content{
-    font-size: 22px;
+    font-size: 20px;
     padding: 10px;
 }
 
 .appendix-box{
     padding: 14px;
-    font-size: 20px;
+    font-size: 18px;
+    max-height: fit-content;
+
+}
+}
+
+@media (max-width: 320px){
+
+.hud-collapse-toggle{
+    font-size: 30px;
+}
+
+.hud-home{
+    padding-top: 14px;
+}
+
+.hud-home-button-active{
+    font-size: 32px;
+    margin-left: 50px;
+}
+
+.hud-button{
+    width: 120px;
+    height: 42px;
+    font-size: 18px;
+}
+
+.social-link{
+    font-size: 36px;
+}
+
+.social-link-github{
+    font-size: 44px;
+}
+
+footer{
+    height:130px;
+    background-image: url("src/HUDbar320.png");
+}
+
+
+.industry-button-toggle{
+    flex-direction: row;
+    top: 0px;
+    left: 14px;
+}
+
+.industry-button{
+    font-size: 18px;
+    width: 130px;
+    height: 50px;
+    line-height: 14px;
+}
+
+.home-container{
+    width: 95%;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 5% 53% 42%;
+    grid-template-areas: "content content"
+    "main main"
+    "sidebar sidebar";
+    height: 790px;
+}
+
+.coding-knowledge{
+    font-size: 16px;
+}
+
+.center-content{
+    font-size: 18px;
+}
+
+.appendix-box{
+    padding: 10px;
+    font-size: 18px;
     max-height: fit-content;
 
 }

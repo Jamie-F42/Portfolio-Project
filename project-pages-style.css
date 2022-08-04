@@ -100,3 +100,173 @@ iframe{
 .project-image{
     border-radius: 10px;
 }
+
+@media (max-width: 1024px){
+   .hud-home-button{
+    font-size: 60px;
+    margin-left: 36px;
+}
+
+.coding-knowledge-project{
+    padding-left: 0px;
+    font-size: 20px;
+}
+
+.rect-point-filled{
+    height: 22px;
+    width: 14px;
+}
+.rect-point-empty{
+    height: 22px;
+    width: 14px;
+}
+.home-container{
+    grid-template-columns: 25% 52% 23%;
+}
+
+.react-project-button{
+    font-size: 20px;
+}
+}
+
+@media (max-width: 768px){
+   .hud-home-button{
+    font-size: 50px;
+    margin-left: 36px;
+}
+
+.coding-knowledge-project{
+    padding-left: 0px;
+    font-size: 20px;
+}
+
+.rect-point-filled{
+    height: 22px;
+    width: 14px;
+    margin: 3px;
+}
+.rect-point-empty{
+    height: 22px;
+    width: 14px;
+    margin: 3px;
+}
+
+.home-container{
+    width: 95%;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 48% 52%;
+    grid-template-areas: "content main"
+    "content sidebar";
+    height: 1000px;
+}
+
+.home-container-tarot{
+    width: 95%;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 60% 40%;
+    grid-template-areas: "content main"
+    "content sidebar";
+    height: 1300px;
+}
+
+.react-project-button{
+    font-size: 20px;
+}
+}
+
+@media (max-width: 425px){
+   .hud-home-button{
+    font-size: 50px;
+    margin-left: 36px;
+}
+
+.coding-knowledge-project{
+    padding-left: 0px;
+    font-size: 20px;
+    flex-wrap: wrap;
+    height: 160px;
+    align-content: space-evenly;
+}
+
+.coding-knowledge-tarot{
+    height: 110px;
+}
+
+.rect-point-filled{
+    height: 22px;
+    width: 14px;
+    margin: 3px;
+}
+.rect-point-empty{
+    height: 22px;
+    width: 14px;
+    margin: 3px;
+}
+
+.home-container{
+     width: 95%;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 15% 35% 45%;
+    grid-template-areas: "content content"
+    "main main"
+    "sidebar sidebar";
+    height: 1200px;
+}
+
+.home-container-tarot{
+     width: 95%;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 10% 40% 45%;
+    grid-template-areas: "content content"
+    "main main"
+    "sidebar sidebar";
+    height: 1220px;
+}
+
+.react-project-button{
+    font-size: 20px;
+    margin-top: 20px;
+}
+}
+
+@media (max-width: 320px){
+   .hud-home-button{
+    font-size: 32px;
+}
+
+.coding-knowledge-project{
+    padding-left: 0px;
+    font-size: 18px;
+    flex-wrap: wrap;
+    height: 140px;
+    align-content: space-evenly;
+}
+
+.coding-knowledge-tarot{
+    height: 110px;
+}
+
+.rect-point-filled{
+    height: 18px;
+    width: 12px;
+}
+.rect-point-empty{
+    height: 18px;
+    width: 12px;
+}
+
+.home-container{
+    grid-template-rows: 12% 30% 58%;
+    height: 1120px;
+}
+
+.home-container-tarot{
+    grid-template-rows: 10% 35% 55%;
+    height: 1300px;
+}
+
+.react-project-button{
+    font-size: 20px;
+    margin-top: 10px;
+}
+}
