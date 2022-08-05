@@ -21,9 +21,10 @@
     width: 90%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 30% 50% 20%;
-    grid-template-rows: 100%;
-    grid-template-areas: "content main sidebar";
+    grid-template-columns: 30% 35% 15% 20%;
+    grid-template-rows: 10% 90%;
+    grid-template-areas: "content header footer sidebar"
+    "content main main sidebar";
     min-height: 900px;
 }
 
@@ -52,28 +53,18 @@
 
 .project-specs{
     font-size: 22px;
-    grid-area: footer;
     padding:10px;
     margin-top: 1.6em;
     line-height: 1.8em;
     align-items: flex-start;
 }
-.center-content{
-    grid-area: main;
-    display:grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 10% 90%;
-    height: fit-content;
-    grid-template-areas: "sidebar header"
-    "main main";
-}
 
 .project-objectives{
-    grid-area: sidebar;
+    grid-area: header;
 }
 
 .project-logo{
-    grid-area: header;
+    grid-area: footer;
     max-width: 170px;
     padding-left: 20px;
 }
@@ -123,6 +114,7 @@
     grid-template-rows: 100%;
     grid-template-areas: "main footer header sidebar content";
     justify-content: space-around;
+    height: fit-content;
 }
 
 .lowfi-pod{
@@ -154,11 +146,17 @@
     grid-area:content;
     display:flex;
     flex-direction: column;
+    margin-top: 10px;
 }
 
 .wireframe-pod{
     max-width: 260px;
     margin: 35px 20px 35px 20px;
+}
+
+.pod-hi-wireframe{
+    width: 222px;
+    margin-bottom: 48px;
 }
 
 .objectives-title{
@@ -170,28 +168,6 @@
     list-style:none;
     font-size: 26px;
 }
-
-.center-content-lift{
-    grid-area: main;
-    display:grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 10% 80% 10%;
-    height: fit-content;
-    grid-template-areas: "sidebar header"
-    "main main"
-    "content content";
-}
-
-.project-objectives-lift{
-    grid-area: sidebar;
-}
-
-.project-logo-lift{
-    grid-area: header;
-    max-width: 170px;
-    padding-left: 20px;
-}
-
 .project-deliverables-lift{
     grid-area: main;
     width: 90%;
@@ -205,19 +181,434 @@
     margin:10px;
 }
 
-.react-project-button{
-    font-size: 22px;
-    font-weight: 600;
-   border-radius: 6px;
-    padding: 8px 16px 8px 16px;
-    margin-bottom: 8px;
-    transition: 0.3s; 
-    background-color: var(--primary-color);
-    float: right;
-    border: none;
+
+@media (max-width:1440px){
+    .ux-project-container{
+    grid-template-columns: 30% 33% 14% 23%;
+    height:fit-content;
 }
 
-.react-project-button:hover{
-    box-shadow: var(--primary-glow);
-    animation: ease-in-out;
+.project-logo{
+    padding-right: 20px;
+}
+
+.pod-hi-wireframe{
+    width: 125px;
+    margin-bottom: 44px;
+}
+}
+
+
+@media (max-width: 1024px){
+    .hud-home-button{
+    font-size: 60px;
+    margin-left: 36px;
+}
+
+.ux-project-container{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 32% 30% 13% 25%;
+    grid-template-rows: 15% 85%;
+    grid-template-areas: "content header footer sidebar"
+    "content main main sidebar";
+    min-height: 900px;
+}
+
+.appendix-box{
+    padding: 14px;
+    font-size: 20px;
+}
+
+.matrix-image{
+    padding-right: 6px;
+}
+
+.project-specs{
+    font-size: 20px;
+    padding:10px;
+    margin-top: 1.5em;
+}
+
+.objectives-title{
+    font-size: 26px;
+}
+
+.objectives-list{
+    font-size: 22px;
+}
+
+.project-logo{
+    max-width: 120px;
+    padding-right: 20px;
+    padding-left: 2px;
+}
+
+.project-deliverables{
+    padding: 0px;
+    padding-right: 14px;
+    grid-template-columns: 45% 10% 45%;
+    height: fit-content;
+}
+
+.arrow{
+    font-size: 46px;
+}
+
+.wireframe{
+    max-width: 260px;
+    margin: 10px;
+}
+
+.project-deliverables-pod{
+    margin-top:30px;
+    padding: 10px;
+    height: 1010px;
+}
+
+.arrow-pod{
+    font-size: 28px; 
+}
+
+.arrow-pod-2{
+    grid-area:sidebar;
+}
+
+.wireframe-pod{
+    max-width: 260px;
+    margin: 15px 5px 15px 5px;
+}
+
+.hifi-pod{
+    margin-top: 3px;
+}
+
+.pod-hi-wireframe{
+    width: 104px;
+    margin-bottom: 16px;
+}
+}
+
+
+
+@media (max-width: 768px){
+    .hud-home-button{
+    font-size: 50px;
+    margin-left: 20px;
+}
+
+.ux-project-container{
+    width: 95%;
+    grid-template-columns: 40% 47% 13%;
+    grid-template-rows: 25% 28% 47%;
+    grid-template-areas: "content header footer"
+    "content main main"
+    "sidebar main main";
+    height: 1000px;
+}
+.appendix-box{
+    padding: 14px;
+    font-size: 20px;
+}
+
+.matrix-image{
+    padding-right: 6px;
+}
+
+.project-specs{
+    font-size: 20px;
+    padding:10px;
+    margin-top: 1.5em;
+}
+
+.objectives-title{
+    font-size: 26px;
+}
+
+.objectives-list{
+    font-size: 22px;
+}
+
+.project-logo{
+    max-width: 120px;
+    padding: 0px;
+}
+
+.project-deliverables{
+    padding: 0px 0px 0px 10px;
+    grid-template-columns: 45% 10% 45%;
+}
+
+.arrow{
+    font-size: 46px;
+}
+
+.wireframe{
+    max-width: 260px;
+    margin: 10px;
+}
+
+.project-deliverables-pod{
+    margin-top:0px;
+    padding: 0px 0px 0px 10px;
+    height: 1070px;
+}
+
+.arrow-pod{
+    font-size: 28px; 
+}
+
+.arrow-pod-2{
+    grid-area:sidebar;
+}
+
+.wireframe-pod{
+    max-width: 260px;
+    margin: 15px 5px 15px 5px;
+}
+
+.pod-hi-wireframe{
+    width: 108px;
+    margin-bottom: 26px;
+}
+
+.project-deliverables-lift{
+    margin: 0 auto;
+}
+}
+
+
+@media (max-width: 425px){
+    .hud-home-button{
+    font-size: 38px;
+    margin-left: 28px;
+    margin-top: 14px;
+}
+
+.ux-project-container{
+    width: 95%;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 5% 13% 18% 69%;
+    grid-template-areas: "content footer"
+    "content header"
+    "sidebar sidebar"
+    "main main";
+    height: fit-content;
+}
+
+.ux-project-container-pod{
+    width: 95%;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 5% 19% 23% 55%;
+    grid-template-areas: "content footer"
+    "content header"
+    "sidebar sidebar"
+    "main main";
+    height: fit-content;
+}
+
+.ux-project-container-lift{
+    width: 95%;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 6% 15% 26% 53%;
+    grid-template-areas: "content footer"
+    "content header"
+    "sidebar sidebar"
+    "main main";
+    height: fit-content;
+}
+
+.appendix-box{
+    padding: 14px;
+    font-size: 18px;
+    height: fit-content;
+}
+
+.matrix-image{
+    padding-right: 6px;
+}
+
+.project-specs{
+    font-size: 18px;
+    padding:6px;
+    margin-top: 1.5em;
+}
+
+.project-objectives{
+    height: fit-content;
+}
+
+.objectives-title{
+    font-size: 22px;
+}
+
+.objectives-list{
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-logo{
+    max-width: 90px;
+    padding-left: 10px;
+}
+
+.project-deliverables{
+    padding: 0px;
+    grid-template-columns: 45% 10% 45%;
+    height: fit-content;
+}
+
+.arrow{
+    font-size: 46px;
+}
+
+.wireframe{
+    max-width: 260px;
+    margin: 10px;
+}
+
+.project-deliverables-pod{
+    margin-top:30px;
+    padding: 10px;
+    height: fit-content;
+}
+
+.arrow-pod{
+    font-size: 28px; 
+}
+
+.arrow-pod-2{
+    grid-area:sidebar;
+}
+
+.wireframe-pod{
+    max-width: 260px;
+    margin: 15px 5px 15px 5px;
+}
+
+.pod-hi-wireframe{
+    width: 100px;
+    margin-bottom: 18px;
+}
+
+.project-deliverables-lift{
+    margin-top: 0px;
+}
+}
+
+@media (max-width: 320px){
+    .hud-home-button{
+    font-size: 32px;
+    margin-left: 28px;
+    margin-top: 0px;
+}
+
+.ux-project-container{
+    width: 95%;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 8% 23% 49%;
+    grid-template-areas: "content"
+    "header"
+    "sidebar"
+    "main";
+    height: fit-content;
+}
+
+.ux-project-container-pod{
+    grid-template-rows: 25% 9% 30% 36%;
+    grid-template-areas: "content"
+    "header"
+    "sidebar"
+    "main";
+    height: fit-content;
+}
+
+.ux-project-container-lift{
+    grid-template-rows: 19% 7% 33% 42%;
+    grid-template-areas: "content"
+    "header"
+    "sidebar"
+    "main";
+    height: fit-content;
+}
+
+.appendix-box{
+    padding: 12px;
+    font-size: 18px;
+    height: fit-content;
+}
+
+.matrix-image{
+    padding-right: 0px;
+}
+
+.project-specs{
+    font-size: 16px;
+    padding:6px;
+    margin-top: 1.5em;
+}
+
+.project-objectives{
+    height: fit-content;
+    margin-left: 10px;
+}
+
+.objectives-title{
+    font-size: 22px;
+}
+
+.objectives-list{
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-logo{
+    display: none;
+}
+
+.project-deliverables{
+    padding: 0px;
+    grid-template-columns: 45% 10% 45%;
+    height: fit-content;
+}
+
+.arrow{
+    font-size: 30px;
+}
+
+.wireframe{
+    max-width: 260px;
+    margin: 6px;
+}
+
+.project-deliverables-pod{
+    margin-top:10px;
+    padding: 10px;
+    height: fit-content;
+}
+
+.arrow-pod{
+    font-size: 20px; 
+}
+
+.arrow-pod-2{
+    grid-area:sidebar;
+}
+
+.wireframe-pod{
+    max-width: 260px;
+    margin: 5px 2px 5px 2px;
+}
+
+.pod-hi-wireframe{
+    width: 75px;
+    margin-bottom: 6px;
+}
+
+.project-deliverables-lift{
+    margin-top: 0px;
+}
 }

@@ -101,6 +101,19 @@ iframe{
     border-radius: 10px;
 }
 
+
+@media (max-width: 1440px){
+    .home-container{
+        width: 95%;
+    grid-template-columns: 24% 53% 23%;
+}
+
+.skill-list{
+    margin-left: 10%;
+}
+}
+
+
 @media (max-width: 1024px){
    .hud-home-button{
     font-size: 60px;

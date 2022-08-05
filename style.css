@@ -147,6 +147,10 @@ h1{
     align-items:center;
 }
 
+.hud-contact-ux{
+    margin-left: 20px;
+}
+
 .email-linkedin-icons{
     display: flex;
     flex-direction: column;
@@ -180,9 +184,9 @@ h1{
 
 footer{
     font-family: 'Rajdhani', sans-serif;
-    height:220px;
+    height:240px;
     position:fixed;
-    bottom: -14px;
+    bottom: -18px;
     left:0px;
     width:100%;
     background-image: url("src/HUDbar.png");
@@ -266,6 +270,18 @@ footer{
     margin: 0;
 }
 
+.ux-knowledge{
+    grid-area: content;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-size: 26px;
+    padding-top: 15px;
+    height:410px;
+    margin: 0;
+}
+
 .coding-language{
     border: solid 2px;
     padding: 4px 8px 2px 8px;
@@ -332,6 +348,45 @@ footer{
     font-size: 18px;
 }
 
+.design-style-img{
+    max-width: 740px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+
+@media (max-width: 1440px){
+    
+    h1{
+    font-size: 54px;
+}
+
+.masthead-intro{
+    font-size: 30px;
+}
+
+footer{
+    height:240px;
+    background-image: url("src/HUDbar1440.png");
+}
+
+.home-container{
+    grid-template-columns: 28% 50% 22%;
+}
+
+.design-style-img{
+    max-width: 600px;
+    padding-top: 30px;
+}
+
+.ux-knowledge{
+    font-size: 24px;
+    padding-left:0px;
+    height:400px;
+}
+}
+
 
 @media (max-width: 1024px){
     
@@ -368,6 +423,11 @@ footer{
     width: 175px;
     height: 56px;
     font-size: 22px;
+}
+
+.hud-button-ux{
+    width: 150px;
+    height: 52px;
 }
 
 .square-point-filled{
@@ -433,6 +493,11 @@ footer{
     height:300px;
 }
 
+.ux-knowledge{
+    font-size: 22px;
+    height:390px;
+}
+
 .soft-skills-title{
     font-size: 28px;
     text-align: center;
@@ -454,6 +519,11 @@ footer{
 .appendix-box{
     padding: 18px;
     font-size: 20px;
+}
+
+.design-style-img{
+    max-width: 400px;
+    padding-top: 20px;
 }
 }
 
@@ -498,6 +568,12 @@ footer{
     height: 48px;
     font-size: 20px;
     font-weight: 400;
+}
+
+.hud-button-ux{
+    width: 122px;
+    height: 46px;
+    font-size: 18px;
 }
 
 .difficulty-level-indicator{
@@ -548,6 +624,15 @@ footer{
     "content sidebar";
 }
 
+.home-container-ux{
+    width: 95%;
+    grid-template-columns: 26% 74%;
+    grid-template-rows: 75% 25%;
+    grid-template-areas: "content main"
+    "sidebar sidebar";
+    height: fit-content;
+}
+
 .skill-list{
     margin-left: 10%;
 }
@@ -556,6 +641,11 @@ footer{
     font-size: 20px;
     padding-top: 4px;
     height:260px;
+}
+
+.ux-knowledge{
+    font-size: 20px;
+    height:380px;
 }
 
 .soft-skills-title{
@@ -579,8 +669,13 @@ footer{
 .appendix-box{
     padding: 14px;
     font-size: 20px;
-    max-height: fit-content;
+    height: fit-content;
 
+}
+
+.design-style-img{
+    max-width: 380px;
+    padding-top: 15px;
 }
 }
 
@@ -713,6 +808,16 @@ footer{
     height: 760px;
 }
 
+.home-container-ux{
+   width: 95%;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 15% 42% 43%;
+    grid-template-areas: "content content"
+    "main main"
+    "sidebar sidebar";
+    height: fit-content;
+}
+
 .skill-list{
     margin-left: 0%;
 }
@@ -722,6 +827,15 @@ footer{
     padding: 0px;
     height:fit-content;
     flex-direction: row;
+}
+
+.ux-knowledge{
+    font-size: 18px;
+    height:85px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding: 0px;
 }
 
 .soft-skills-title{
@@ -742,6 +856,10 @@ footer{
     font-size: 18px;
     max-height: fit-content;
 
+}
+
+.design-style-img{
+    display: none;
 }
 }
 
@@ -796,25 +914,29 @@ footer{
 .home-container{
     width: 95%;
     grid-template-columns: 25% 75%;
-    grid-template-rows: 5% 53% 42%;
+    grid-template-rows: 15% 45% 40%;
     grid-template-areas: "content content"
     "main main"
     "sidebar sidebar";
-    height: 790px;
+    height: fit-content;
 }
 
 .coding-knowledge{
     font-size: 16px;
 }
 
-.center-content{
-    font-size: 18px;
+.ux-knowledge{
+    font-size: 16px;
+    height:116px;
 }
 
 .appendix-box{
     padding: 10px;
     font-size: 18px;
     max-height: fit-content;
+}
 
+.design-style-img{
+    display: none;
 }
 }
