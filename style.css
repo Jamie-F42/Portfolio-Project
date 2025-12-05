@@ -154,6 +154,12 @@ h1{
     margin-left: 20px;
 }
 
+.tsbanner{
+    width: 1200px;
+    display: block;
+    margin-left: 10%;
+   } 
+
 .email-linkedin-icons{
     display: flex;
     flex-direction: column;
