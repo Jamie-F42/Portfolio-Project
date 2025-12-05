@@ -8,10 +8,10 @@
 
 body{
     margin:30px;
-    font-family: "Alumni Sans Pinstripe", sans-serif;
-    font-weight: 600;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
     font-style: normal;
-    font-size: 22px;
+    font-size: 14px;
     background-color: var(--background-color);
     color: var(--type-color);
 }
@@ -49,12 +49,12 @@ hr{
 }
 
 .article-title{
-  font-size: 28px;
+  font-size: 24px;
   text-decoration: underline;
   padding: 10px 5px 20px 5px;
 }
 .subhead{
-  font-size: 24px;
+  font-size: 22px;
   padding: 20px 20px 20px 100px;
 }
 
@@ -64,8 +64,8 @@ hr{
 }
 
 .article{
-  max-width: 430px;
-  height: 530px;
+  max-width: 450px;
+  height: 550px;
   background-color:#f741df2a;
   margin: 14px;
   border-radius: var(--border-radius);
@@ -74,13 +74,13 @@ hr{
 
 .article-preview-img{
   height: 230px;
-  width: 400px;
+  width: 420px;
   border-radius: var(--border-radius);
 }
 
 .article-logline{
   padding-left: 10px;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 a{
@@ -89,45 +89,46 @@ a{
 .read{
   text-align: right;
   padding: 15px;
-  font-size: 24px;
+  font-size: 20px;
   font-family: "Alumni Sans Pinstripe", sans-serif;
   
 }
 
 .coming{
   font-family: "Rubik Doodle Shadow", system-ui;
-  font-size: 22px;
+  font-size: 24px;
   padding-top: 30px;
   padding-bottom: 10px;
+  font-weight: 600;
 }
 
 .soon{
-  height: 330px;
+  height: 360px;
 }
 
 .byline{
-  font-size: 26px;
+  font-size: 22px;
   padding: 15px;
 }
 
 .article-body{
   max-width: 1500px;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 40px;
 }
 
 .prev-art{
   text-align: left;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .next-art{
   text-align: right;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .cosclass-title{
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 600;
   text-decoration: underline;
 }
